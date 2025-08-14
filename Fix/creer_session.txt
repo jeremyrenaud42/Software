@@ -1,0 +1,17 @@
+bootcer clé windows,réparer,cmd
+c:\windows\system 32
+ren utilman.exe utilman.sav
+copy cmd.exe utilman.exe
+wpeutil reboot
+
+ouvrir les options d'ergnomie et le CMD s'ouvre 
+net user Administrateur /active:yes
+reboot sur la clé pour effacé(faire sa vite)
+
+del utilman.exe
+ren utilman.sav utilman.exe
+wpeutil reboot
+
+
+osk.exe = virutal keyboard
+utilman.exe = ease of access
