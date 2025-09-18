@@ -1,0 +1,65 @@
+﻿<Window x:Name="form1Installation" x:Class="InstallationWPFMainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstallationWPFMainWindow"
+        mc:Ignorable="d"
+        Title="Installation Windows" WindowStyle="None" Height="688" Width="1041" WindowStartupLocation="CenterScreen" Icon="C:/_Tech/Applications/Source/Images/Icone.ico" AllowsTransparency="True" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid x:Name="Main">
+        <Grid x:Name="Background">
+            <Image x:Name="PictureBoxBackGround" HorizontalAlignment="Center" Height="688" VerticalAlignment="Top" Width="1041" Source="C:/_Tech/Applications/Source/Images/Background_menu.jpeg"/>
+            <Rectangle Fill="Black" Opacity="0.6"/>
+        </Grid>
+        <Grid x:Name="Titlebar">
+            <Rectangle Margin="0,0,0,0" Width="1041" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#2b2d30" Offset="0" />
+                        <GradientStop Color="DarkRed" Offset="0.15" />
+                        <GradientStop Color="#2b2d30" Offset="0.90" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Button x:Name="btnclose" Content="X" Margin="0,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60" Height="40" IsCancel="True" FontSize="25" Background="Transparent" Foreground ="Azure" BorderBrush="Transparent" FontWeight="Bold"/>
+            <Button x:Name="btnmin" Content="-" Margin="0,0,50,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="60" Height="40" FontSize="30" Background="Transparent" Foreground ="Azure" BorderBrush="Transparent" FontWeight="Bold"/>
+
+            <Image x:Name="Logo" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Margin="4,4,0,0" Width="32" Source="C:/_Tech/Applications/Source/Images/Icone.ico"/>
+            <Label x:Name="lblTitre" Content="Configuration du Windows" FontWeight="SemiBold" Foreground="Azure" FontSize="16" FontFamily="Arial" HorizontalAlignment="Left" Margin="50,6,0,0" VerticalAlignment="Top" Width="400"/>
+        </Grid>
+
+        <Grid x:Name="Window">
+            <Label x:Name="lblProgress" Content="Initialisation" HorizontalAlignment="Center" VerticalAlignment="Top" Width="971" Height="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Consolas" FontSize="12" Background="#FF94120C" Margin="0,50,0,0" Foreground="#FFFBF0F0"/>
+            <Border x:Name="richTxtBxOutputBorder" Background="#2b2d30" BorderThickness="2" BorderBrush="DarkRed" CornerRadius="8" Padding="10" Opacity="0.8" Width="681" Height="580" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="325,80,35,0"></Border>
+            <RichTextBox x:Name="richTxtBxOutput" HorizontalScrollBarVisibility="Auto" IsReadOnly="True" Foreground="snow" FontStyle="Normal" FontWeight="DemiBold" VerticalScrollBarVisibility="Auto" Margin="330,85,40,35" BorderThickness="0" Background="Transparent">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text=""/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+            <Border x:Name="StatusBorder" Background="#2b2d30" BorderThickness="2" BorderBrush="DarkRed" CornerRadius="8" Padding="10" Opacity="0.8" Width="280" Height="580" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,80,0,0"></Border>
+            <Label x:Name="lblWinget" Content="Installer Winget" HorizontalAlignment="Left" Margin="58,85,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lblChoco" Content="Installer Chocolatey" HorizontalAlignment="Left" Margin="58,115,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lblNuget" Content="Installer Nuget" HorizontalAlignment="Left" Margin="58,145,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lbl_chkboxMSStore" Content="Mettre à jour le Microsoft Store" HorizontalAlignment="Left" Margin="58,175,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxDisque" Content="Renommer le disque" HorizontalAlignment="Left" Margin="58,205,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxExplorer" Content="Configurer l'explorateur" HorizontalAlignment="Left" Margin="58,235,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxBitlocker" Content="Désactiver Bitlocker" HorizontalAlignment="Left" Margin="58,265,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxStartup" Content="Désactiver le démarage rapide" HorizontalAlignment="Left" Margin="58,295,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxClavier" Content="Supprimer le clavier Anglais" HorizontalAlignment="Left" Margin="58,325,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxConfi" Content="Configurer les options de confidentialité" HorizontalAlignment="Left" Margin="58,355,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lbl_chkboxIcone" Content="Installer les icones système" HorizontalAlignment="Left" Margin="58,385,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lblSoftware" Content="Installer les applications" HorizontalAlignment="Left" Margin="58,415,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lblActivation" Content="Vérifier le statut d'activation du Windows" HorizontalAlignment="Left" Margin="58,445,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lbl_chkboxWindowsUpdate" Content="Mettre à jour Windows" HorizontalAlignment="Left" Margin="58,475,0,0" VerticalAlignment="Top" Width="285" Foreground="gray"/>
+            <Label x:Name="lblManualComplete" Content="Finaliser la configuration" HorizontalAlignment="Left" Margin="58,505,0,0" VerticalAlignment="Top" Width="285" Foreground="White"/>
+            <Label x:Name="lblFree4" Content="Label" HorizontalAlignment="Left" Margin="58,535,0,0" VerticalAlignment="Top" Width="285" Visibility="Hidden" Foreground="gray"/>
+            <Label x:Name="lblFree1" Content="Label" HorizontalAlignment="Left" Margin="58,565,0,0" VerticalAlignment="Top" Width="285" Visibility="Hidden" Foreground="gray"/>
+            <Label x:Name="lblFree3" Content="Label" HorizontalAlignment="Left" Margin="58,595,0,0" VerticalAlignment="Top" Width="285" Visibility="Hidden" Foreground="gray"/>
+            <Label x:Name="lblFree2" Content="Label" HorizontalAlignment="Left" Margin="58,625,0,0" VerticalAlignment="Top" Width="285" Visibility="Hidden" Foreground="gray"/>
+            <Rectangle x:Name="rectbot" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="1041" Height="15" Fill="#FF94120C" Margin="0,0,0,0"/>
+        </Grid>
+    </Grid>
+</Window>

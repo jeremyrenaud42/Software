@@ -1,0 +1,104 @@
+{
+  "chkboxAdobe": {
+    "Status": "1"
+  },
+  "chkboxGoogleChrome": {
+    "Status": "1"
+  },
+  "chkboxTeamviewer": {
+    "Status": "0"
+  },
+  "chkboxVLC": {
+    "Status": "0"
+  },
+  "chkbox7zip": {
+    "Status": "0"
+  },
+  "chkboxMacrium": {
+    "Status": "0"
+  },
+  "chkboxGeForce": {
+    "Status": "0"
+  },
+  "chkboxLenovoVantage": {
+    "Status": "0"
+  },
+  "chkboxLenovoSystemUpdate": {
+    "Status": "0"
+  },
+  "chkboxHPSA": {
+    "Status": "0"
+  },
+  "chkboxMSICenter": {
+    "Status": "0"
+  },
+  "chkboxMyAsus": {
+    "Status": "0"
+  },
+  "chkboxDellsa": {
+    "Status": "0"
+  },
+  "chkboxSteam": {
+    "Status": "0"
+  },
+  "chkboxZoom": {
+    "Status": "0"
+  },
+  "chkboxDiscord": {
+    "Status": "0"
+  },
+  "chkboxFirefox": {
+    "Status": "0"
+  },
+  "chkboxLibreOffice": {
+    "Status": "0"
+  },
+  "chkboxIntel": {
+    "Status": "0"
+  },
+  "chkboxDisque": {
+    "Status": "1"
+  },
+  "chkboxWindowsUpdate": {
+    "Status": "1"
+  },
+  "chkboxMSStore": {
+    "Status": "1"
+  },
+  "chkboxClavier": {
+    "Status": "1"
+  },
+  "chkboxConfi": {
+    "Status": "1"
+  },
+  "chkboxStartup": {
+    "Status": "1"
+  },
+  "chkboxExplorer": {
+    "Status": "1"
+  },
+  "chkboxIcone": {
+    "Status": "1"
+  },
+  "chkboxBitlocker": {
+    "Status": "1"
+  },
+  "chkboxRemove": {
+    "Status": "1"
+  },
+  "chkboxDeleteFolder": {
+    "Status": "1"
+  },
+  "chkboxDeleteBin": {
+    "Status": "1"
+  },
+  "CbBoxRestartTimer": {
+    "Status": "300"
+  },
+  "CbBoxSize": {
+    "Status": "250"
+  },
+  "TxtBxDiskName": {
+    "Status": "OS"
+  }
+}
